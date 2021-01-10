@@ -6,7 +6,7 @@
 
 body {
 	padding: 2%;
-	background-image: url("/assets/background-image1.png");
+	background-image: url("./assets/background-image1.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: bottom right;

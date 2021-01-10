@@ -22,7 +22,6 @@ function openPopup(id) {
   var image = document.createElement('img');
   image.className = "image";
 
-
   //to know from where the click event has been generated
   switch (id) {
     case 'Yuvraj':
