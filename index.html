@@ -1,13 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CrickPro</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/ball.png" type="image/x-icon">
 </head>
+
 <body>
-    <!-- Type your code here -->
+    <div class="header">
+        <img src="./assets/Logo.JPG" alt="CricPro">
+    </div>
+    <div class="container">
+        <div class="title">
+            <span class="head-title">ICC WORLD CUP 2011</span>
+            <span class="sub-title">India vs SriLanka ScoreCard</span>
+        </div>
+        <div class="table">
+            <div class="table-title">
+                <span>India Innings</span>
+                <span>277 - 4 (48.2)</span>
+            </div>
+            <div class="table-header">
+                <span>Batsman</span>
+                <div></div>
+                <div class="score">
+                    <span>R</span>
+                    <span>B</span>
+                    <span>4s</span>
+                    <span>6s</span>
+                    <span>SR</span>
+                </div>
+            </div>
+            <div class="row">
+                <span class="player" onClick="openPopup('Sehwag')">
+                    Virendra Sehwag
+                </span>
+                <span>lbw b L Malinga</span>
+                <div class="score">
+                    <span>0</span>
+                    <span>2</span>
+                    <span>0</span>
+                    <span>0</span>
+                    <span>0.00</span>
+                </div>
+                <div id="Sehwag"></div>
+            </div>
+            <div class="row">
+                <span class="player" onclick="openPopup('Sachin')">Sachin Tendulkar</span>
+                <span>c K Sangakkara b L Malinga</span>
+                <div class="score">
+                    <span>18</span>
+                    <span>14</span>
+                    <span>2</span>
+                    <span>0</span>
+                    <span>128.57</span>
+                </div>
+                <div id="Sachin"></div>
+            </div>
+            <div class="row">
+                <span class="player" onclick="openPopup('Gambhir')">Gautam Gambhir</span>
+                <span>b T Perera</span>
+                <div class="score">
+                    <span>97</span>
+                    <span>122</span>
+                    <span>9</span>
+                    <span>0</span>
+                    <span>79.51</span>
+                </div>
+                <div id="Gambhir"></div>
+            </div>
+            <div class="row">
+                <span class="player" onclick="openPopup('Kohli')">Virat Kohli</span>
+                <span>c & b T Dilshan</span>
+                <div class="score">
+                    <span>35</span>
+                    <span>49</span>
+                    <span>4</span>
+                    <span>0</span>
+                    <span>71.43</span>
+                </div>
+                <div id="Kohli"></div>
+            </div>
+            <div class="row">
+                <span class="player" onclick="openPopup('Dhoni')">MS Dhoni (c & wk) </span>
+                <span>not out</span>
+                <div class="score">
+                    <span>91</span>
+                    <span>79</span>
+                    <span>8</span>
+                    <span>2</span>
+                    <span>115.19</span>
+                </div>
+                <div id="Dhoni"></div>
+            </div>
+            <div class="row">
+                <span class="player" onclick="openPopup('Yuvraj')">Yuvraj Singh </span>
+                <span>not out</span>
+                <div class="score">
+                    <span>21</span>
+                    <span>24</span>
+                    <span>2</span>
+                    <span>0</span>
+                    <span>87.50</span>
+                </div>
+                <div id="Yuvraj"></div>
+            </div>
+            <div class="row">
+                <span>Extras</span>
+                <span></span>
+                <span>15(b 1, lb 6, w 8, nb 0, p 0)</span>
+            </div>
+            <div class="row">
+                <span>Total</span>
+                <span></span>
+                <span>277(4 wkts,48.2 Ov)</span>
+            </div>
+            <div class="row remaing-players">
+                <span>Did not bat</span>
+                <div class="player">
+                    <span onclick="openPopup('Raina')">Suresh Raina,</span>
+                    <span onclick="openPopup('Harbhajan')">Harbhajan Singh, </span>
+                    <span onclick="openPopup('Zaheer')">Zaheer Khan,</span>
+                    <span onclick="openPopup('Patel')">Munaf Patel,</span>
+                    <span onclick="openPopup('Sreesanth')">S Sreesanth</span>
+                </div>
+                <div id="Raina"></div>
+                <div id="Harbhajan"></div>
+                <div id="Zaheer"></div>
+                <div id="Patel"></div>
+                <div id="Sreesanth"></div>
+            </div>
+        </div>
+    </div>
     <footer class="footer">Made with <img src="/assets/prograd-heart.svg"> by ProGrad</footer>
 </body>
+<script src="app.js"></script>
+
 </html>
